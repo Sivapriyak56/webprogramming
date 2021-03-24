@@ -1,0 +1,39 @@
+Aim:Outline a registration form using php PHP and do  necessary validations
+
+Sourcecode:
+
+<html>
+<head>
+<title>insert data in form</title>
+</head>
+<body>
+<form   action="getdata.php"  method="POST">
+Name:<input  type="text"  name="txtname">
+<br><br>
+Rollno:<input type="text" name="txtno"><br><br>
+Address:<textarea  name="add"  type="textarea"></textarea>
+<br><br>
+
+contactno:<input  type="text"  name="txtcno"><br><br>
+email id:<input  type="text"  name="txteld">
+<br><br>
+<input  type="submit"  name="insert"  value="save">
+<input  type="reset"   value="cancel">
+</body>
+</html> 
+
+
+
+
+<html>
+<head>
+<title>get data from another page</title>
+</head>
+<body>
+<?php
+   echo"Name:".$_POST["txtname"]."</br>";
+   echo"Rollno:".$_POST["txtno"]."</br>";
+   echo"contactno:".$_POST["txtcno"]."</br>";
+   echo"Address:".$_POST["add"]."</br>";
+   echo"email:".$_POST["txteld"]."</br>";
+?>   
